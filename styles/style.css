@@ -113,7 +113,8 @@ div>img {
     right: 20px;
     top: 90px;
 }
-.menuPhone>li{
+
+.menuPhone>li {
     padding: 4px;
 }
 
@@ -129,10 +130,80 @@ div>img {
 
 .btn-menu {
     display: none;
+
     @media (max-width:632px) {
         display: block;
         width: 30px;
         cursor: pointer;
     }
 
+}
+
+/*styleing of produit.html*/
+main {
+    padding-inline: 2rem;
+}
+
+.produits {
+    background-color: #fff8f0;
+}
+
+.link>ol {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.link>ol>li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.link>ol>li>a {
+    color: #2d4436;
+    text-decoration: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.link>ol>li>img {
+    width: 5px;
+    height: auto;
+    display: block;
+}
+
+.link li:not(:last-child)::after {
+    content: "/";
+    color: #95a5a6;
+    font-size: 16px;
+    pointer-events: none;
+    margin-left: 0.3rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.argane-img {
+    object-fit: cover;
+    width: 40%;
+    height: 600px;
+}
+
+article div {
+    display: flex;
+    background-color: #e8e7e5;
+    align-items: center;
+    width: 30rem;
+}
+
+article div>img {
+    background-color: #e8e7e5;
 }
