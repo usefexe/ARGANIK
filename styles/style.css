@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* ne difinit pas un background-color ici car je me trouve un probleme de color dans le Footer  */
+}
+
+.pub {
+    background-color: #183324;
+    color: #eee8dc;
+    text-align: center;
+    font-size: small;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+
+    @media (max-width:852px) {
+        font-size: x-small;
+    }
+}
+
+.Navigation {
+    position: sticky;
+    background-color: #fef7ef;
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 20px -5px rgb(202, 191, 191);
+
+    @media (max-width:845px) {
+        padding: 1rem;
+    }
+}
+
+.logo {
+    align-self: center;
+
+}
+
+.logo>a>img {
+    width: 170px;
+
+    @media (max-width:852px) {
+        width: 100px;
+    }
+}
+
+.menu {
+    background-color: #f9f2e6;
+    padding: 1rem 3rem 1rem 3rem;
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    border-radius: 10rem;
+
+    @media (max-width:632px) {
+        display: none;
+    }
+}
+
+.menu li {
+    background-color: #f9f2e6;
+    display: flex;
+    align-items: center;
+    font-size: large;
+
+    @media (max-width:852px) {
+        font-size: small;
+    }
+}
+
+.menu .lien-actif {
+    background-color: #2f493a;
+    color: #c4c5bb;
+    padding: 5px;
+    padding-inline: 12px;
+    border-radius: 4px;
+}
+
+.profile {
+    border: 1px #ceead6 solid;
+    width: 50px;
+    border-radius: 50px;
+
+    @media (max-width:852px) {
+        width: 40px;
+    }
+}
+
+nav div {
+    display: flex;
+    gap: 2rem;
+
+    @media (max-width:852px) {
+        gap: 1rem;
+    }
+}
+
+div>img {
+    width: 40px;
+
+    @media (max-width:852px) {
+        width: 20px;
+    }
+}
+
+.menuPhone {
+    list-style: none;
+    text-align: start;
+    display: none;
+    background-color: #fef7ef;
+    position: fixed;
+    right: 20px;
+    top: 90px;
+}
+
+.menuPhone>li {
+    padding: 4px;
+}
+
+.menuPhone.active {
+    display: block;
+}
+
+.nav-actions {
+    @media (max-width:632px) {
+        display: none;
+    }
+}
+
+.btn-menu {
+    display: none;
+
+    @media (max-width:632px) {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+/* Footer ----------------------------------------------  */
+
+.footer {
+    width: 100%;
+    background-color: #f5eee1;
+    color: #333;
+    padding: 40px 5% 20px;
+}
+
+.footer .parent {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+
+.content-hero-footer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.content-hero-footer .article-foot {
+    min-width: 0;
+}
+
+.titre-article-foot {
+    margin-bottom: 16px;
+}
+
+.titre-article-foot h3 {
+    color: #183324;
+    font-size: 20px;
+}
+
+.article-foot p {
+    overflow-wrap: anywhere;
+}
+
+
+
+.content-hero-footer .article-foot .hero1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.hero1 h3 {
+    color: #183324;
+}
+
+.content-hero-footer .article-foot .hero1 span {
+    display: inline-block;
+    background-color: #ffdda6;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+
+.article-pied {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.article-pied h5 {
+    width: 100%;
+    color: #917229;
+}
+
+.footer-horaire {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.footer-horaire p {
+    min-width: 0;
+}
+
+
+
+.article-foot ul {
+    list-style: none;
+}
+
+.article-foot ul li {
+    margin-bottom: 8px;
+}
+
+
+.atelier-foot div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.atelier-foot span {
+    flex-shrink: 0;
+}
+
+.atelier-foot p {
+    overflow-wrap: anywhere;
+}
+
+.footer .icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+
+.article-foot .icon-pied {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.article-foot .icon-pied li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff8f0;
+    border-radius: 50%;
+}
+
+.article-foot .icon-pied img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.article-foot .form-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.article-foot .form-footer input,
+.article-foot .form-footer button {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.article-foot .form-footer input {
+    padding: 0 12px;
+    border: 1px solid #d5cbbb;
+    background-color: #fff;
+    outline: none;
+    text-align: left;
+}
+
+.article-foot .form-footer input:focus {
+    outline: 2px solid #183324;
+    outline-offset: 2px;
+}
+
+.article-foot .form-footer button {
+    border: none;
+    background-color: #183324;
+    color: white;
+    cursor: pointer;
+}
+
+.article-foot .form-footer button:hover {
+    background-color: #274b35;
+}
+
+
+
+.content-medium {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    margin: 35px 0;
+    padding: 24px;
+    background-color: #faf3e6;
+    border-radius: 8px;
+}
+
+.content-medium-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #183324;
+    font-weight: bold;
+    min-width: 0;
+}
+
+.content-medium-content p {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+
+.content-pied {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #d8cdbb;
+}
+
+.content-pied-haut {
+    min-width: 0;
+}
+
+.content-pied-bas {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+
+.content-pied-bas p {
+    cursor: pointer;
+}
+
+
+@media (max-width: 1023px) {
+    .content-hero-footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+
+    .content-medium {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .content-pied {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .content-pied-bas {
+        justify-content: flex-start;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 30px 5% 20px;
+    }
+
+    .content-hero-footer {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .content-hero-footer .article-foot {
+        width: 100%;
+    }
+
+    .content-medium {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        margin: 30px 0;
+        padding: 20px;
+    }
+
+    .content-pied-bas {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .footer {
+        padding: 25px 16px 20px;
+    }
+
+    .content-hero-footer {
+        gap: 25px;
+    }
+
+    .titre-article-foot h3 {
+        font-size: 18px;
+    }
+
+    .content-medium {
+        padding: 16px;
+    }
+
+    .content-medium-content {
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    .content-pied {
+        font-size: 13px;
+    }
+
+    .article-foot .icon-pied {
+        gap: 10px;
+    }
+}
+
+
+/* main */
+
+.main-content {
+    height: 100vh;
+}
