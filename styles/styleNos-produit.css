@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+ font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1F2937;
+    background-color: rgb(238, 225, 207);
+    
+
+}
+
+
+.tete-content-h {
+    display: flex ;
+    text-align: center;
+    border: 12px;
+    list-style: none;
+    border: 4px;
+    padding-top: 30px;
+    gap: 3px;
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.icone {
+    font-size: 1px 1px;
+}
+.contite{
+    background-color: rgb(225, 221, 218);
+    display: flex;
+}
+
+
+
+    
+  .rmouk{
+     background-color: #ddda6e;
+    -webkit-mask: url('/icones/livraison.svg') no-repeat center / contain;
+    mask: url('/icones/livraison.svg') no-repeat center / contain;
+  }
