@@ -136,7 +136,6 @@ div>img {
 .btn-menu {
     display: none;
 
-
     @media (max-width:632px) {
         display: block;
         width: 30px;
@@ -144,6 +143,7 @@ div>img {
     }
 
 }
+
 
 /*styleing of produit.html*/
 main {
@@ -254,6 +254,7 @@ main {
     width: 20px;
     background-color: white;
 }
+
 article>div {
     font-size: x-small;
     display: flex;
@@ -360,6 +361,7 @@ article>.rating>div>p {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    padding-inline: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #f4ede1;
@@ -371,49 +373,148 @@ article>.rating>div>p {
     display: flex;
     justify-content: space-between;
 }
+
 .produits>article>.prix-card>.prix-number>div {
     display: flex;
     gap: 0.3rem;
 }
+
 .produits>article>.prix-card>.prix-number>div>h3 {
-    align-self:flex-end;
+    align-self: flex-end;
     font-size: 40px;
     color: #183324;
 }
+
 .produits>article>.prix-card>.prix-number>div>p {
     font-size: 18px;
     align-self: flex-end;
 }
+
 .produits>article>.prix-card>.prix-number>div>span+p {
     font-size: 15px;
 }
 
-.produits>article>.prix-card>.prix-number>.stock>span{
+.produits>article>.prix-card>.prix-number>.stock>span {
     display: inline-flex;
     padding: 4px;
     background-color: #183324;
     border-radius: 50%;
 }
-.produits>article>.prix-card>.prix-number>.stock{
+
+.produits>article>.prix-card>.prix-number>.stock {
     gap: 0.5rem;
     display: inline-flex;
     padding: 1rem;
-    
+
     border-radius: 40%;
     display: flex;
     align-items: center;
-    background-color:#cae9d4;
-}
-.produits>article>.prix-card>p{
-    font-size: 15px;
-}
-article>p{
-    font-size: large;
-    margin-top: 1rem;
-    max-width: 30rem;
-    line-height: 1.6rem;
+    background-color: #cae9d4;
 }
 
+.produits>article>.prix-card>p {
+    font-size: 15px;
+}
+
+article>p {
+    font-size: x-large;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 37rem;
+    line-height: 2rem;
+}
+
+.selected-capacity {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3.5rem;
+    font-size: small;
+}
+
+.selected-capacity>p {
+    color: #1a3526;
+}
+
+.selected-capacity>p+p {
+    color: #7e5a04;
+}
+
+article>.volume-picker {
+    text-align: center;
+    font-size: medium;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+article>.volume-picker>div {
+    background-color: #f9f2e6;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #201d16;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+article>.volume-picker>#line-active {
+    color: #93b09c;
+    background-color: #2f493a;
+}
+
+article>.zone-achat {
+    display: grid;
+    grid-template-columns: repeat(2, 20em 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+article>.zone-achat>.quantity-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+article>.zone-achat>.quantity-input {
+    font-size: medium;
+    background-color: #f9f2e6;
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input>img,
+.quick-buy-btn>img {
+    width: 30px;
+}
+
+article>.zone-achat>.purchase-button {
+    grid-column: 3 span;
+    background-color: #2f493a;
+    color: #90ad99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: medium;
+    border-radius: 8px;
+}
+
+article>.zone-achat>.purchase-button>img {
+    width: 25px;
+}
+
+.quick-buy-btn {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    justify-content: center;
+    gap: 1em;
+    grid-column: 4 span;
+    background-color: #ede6db;
+    border-radius: 8px;
+    margin-top: 0.5em;
+}
 
 /* Footer ----------------------------------------------  */
 
