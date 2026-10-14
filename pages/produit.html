@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produit</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -48,9 +53,51 @@
     <main class="produits">
 
         <article class="image-de-produit">
-            <div><img src="/icones/etoile-demi.svg" alt="etoile-demi">RÉCOLTE TERROIR</div>
+            <div class="first"><img class="starImg" src="/icones/etoile-demi.svg" alt="etoile-demi">RÉCOLTE TERROIR
+            </div>
             <img src="/imgs//fiche-produit/galerie-01-flacon.jpg" alt="galerie-01-flacon" class="argane-img">
             <button><img src="/icones/zoom.png" alt="zoom icon"></button>
+            <div class="gallery-card">
+                <img class="hoverImg" src="/imgs/fiche-produit/galerie-02-texture-pipette.jpg" alt="texture-pipette">
+                <img src="/imgs/fiche-produit/galerie-03-cueillette.jpg" alt="">
+                <img src="/imgs/fiche-produit/galerie-04-concassage.jpg" alt="">
+                <img src="/imgs/fiche-produit/galerie-05-etui-packaging.jpg" alt="">
+            </div>
+            <div class="passeport-terroir">
+                <div class="passeport-para">
+                    <div>
+                        <img src="/icones/certifie.svg" alt="certifie">
+                        <p>PASSEPORT TERROIR • LOT #ARG-2024-88</p>
+                    </div>
+                    <p>CERTIFIÉ IGP</p>
+                </div>
+                <div class="bloc-critere">
+                    <div>
+                        <p>ORIGINE RÉCOLTE</p>
+                        <p>Octobre 2024 • Taroudant</p>
+                    </div>
+                    <div>
+                        <p>MAÎTRESSE ARTISANE</p>
+                        <p>Amina B. (Atelier N°3)</p>
+                    </div>
+                    <div>
+                        <p>MÉTHODE DE PRESSE</p>
+                        <p>1ère Pression à froid (27°C)</p>
+                    </div>
+                    <div>
+                        <p>ACIDITÉ OLÉIQUE</p>
+                        <p>0.28% (Norme Extra Vierge)</p>
+                    </div>
+                </div>
+                <div class="meta-footer">
+                    <p class="meta-footer__source">Coopérative Féminine Solidaire du Souss</p>
+                    <a href="#" class="meta-footer__link">
+                        <span>Voir le certificat complet</span>
+                        <img src="/icones/fleche-droite.svg" alt="fleche-droite">
+                    </a>
+                    <img src="/icones/etoile.svg" alt="etoile" class="star">
+                </div>
+            </div>
         </article>
         <article>
             <div>
@@ -102,15 +149,15 @@
             <div class="volume-picker">
                 <div>
                     <p>50 ml</p>
-                    <p>110 MAD</p>
+                    <p class="prix-card">110 MAD</p>
                 </div>
                 <div id="line-active">
                     <p>100 ml</p>
-                    <p>180 MAD</p>
+                    <p class="prix-card">180 MAD</p>
                 </div>
                 <div>
                     <p>250 ml</p>
-                    <p>350 MAD</p>
+                    <p class="prix-card">350 MAD</p>
                 </div>
             </div>
             <div class="zone-achat">
@@ -127,11 +174,37 @@
                     <img src="/icones/feuille-energie.svg" alt="energie">
                     <p>Commander en 1 clic (Achat express)</p>
                 </div>
+                <div class="carte-argument">
+                    <div class="livraison">
+                        <img src="/icones/livraison.svg" alt="livraison">
+                        <div>
+                            <p>Livraison 48h</p>
+                            <p>Partout au Maroc</p>
+                        </div>
+                    </div>
+                    <div class="verre-anti-UV">
+                        <img src="/icones/globe.svg" alt="UV">
+                        <div>
+                            <p>Verre anti-UV</p>
+                            <p>Protection active</p>
+                        </div>
+                    </div>
+                    <div class="impact-solidaire">
+                        <img src="/icones/favori-plein.svg" alt="favori plein">
+                        <div>
+                            <p>Impact Solidaire</p>
+                            <p>100% Coopérative</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </article>
 
     </main>
-
+    <div class="guide-accordion">
+        <p>GUIDE BO TAN IQUE & P RAT IQUE</p>
+        <h4>Secrets de fabrication et rituel d'application</h4>
+    </div>
     <footer class="footer">
         <div class="parent">
             <div class="content-hero-footer">

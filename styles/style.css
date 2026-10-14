@@ -2,11 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Playfair Display", serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     /* ne difinit pas un background-color ici car je me trouve un probleme de color dans le Footer  */
 }
 
 body {
+    background-color:#fff8ef;;
     display: flex;
+    padding-inline:1rem ;
     flex-direction: column;
 }
 
@@ -14,6 +18,8 @@ body {
     background-color: #183324;
     color: #eee8dc;
     text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
     font-size: small;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
@@ -25,6 +31,9 @@ body {
 
 .Navigation {
     position: sticky;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    top: 0;
     background-color: #fef7ef;
     display: flex;
     padding: 2em;
@@ -112,6 +121,7 @@ div>img {
 .menuPhone {
     list-style: none;
     text-align: start;
+    font-family: "Plus Jakarta Sans", sans-serif;
     display: none;
     background-color: #fef7ef;
     position: fixed;
@@ -161,6 +171,8 @@ main {
     padding: 1rem;
     display: flex;
     font-size: small;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
@@ -211,7 +223,7 @@ main {
     border-radius: 8px;
 }
 
-.image-de-produit div {
+.image-de-produit .first {
     display: flex;
     position: absolute;
     top: 240px;
@@ -220,17 +232,20 @@ main {
     background-color: #e8e7e5;
     align-items: center;
     font-size: small;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold;
     width: 10rem;
     padding: 4px;
     border-radius: 5rem;
 }
 
-.image-de-produit div>img {
+.image-de-produit div>.starImg {
     background-color: #e8e7e5;
     width: 20px;
 }
 
 .produits {
+    margin-bottom: 3rem;
     background-color: #fff8ef;
 }
 
@@ -256,7 +271,8 @@ main {
 }
 
 article>div {
-    font-size: x-small;
+    font-size: small;
+    font-family: "Plus Jakarta Sans", sans-serif;
     display: flex;
     justify-content: flex-start;
     gap: 0.5rem;
@@ -288,6 +304,7 @@ article>div>#tag--highlight {
 }
 
 article>h1 {
+    font-family: "Playfair Display", serif;
     color: #183324;
     padding: 0.5rem;
     padding-top: 2rem;
@@ -305,7 +322,8 @@ article>.rating {
 }
 
 article>.rating>p {
-    font-size: 1.4em;
+     font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: medium;
     color: #1a3425;
     text-decoration: underline;
 }
@@ -354,7 +372,8 @@ article>.rating>div {
 }
 
 article>.rating>div>p {
-    font-size: 1.4em;
+    font-weight: 600;
+    font-size: medium;
 }
 
 .produits>article>.prix-card {
@@ -380,6 +399,7 @@ article>.rating>div>p {
 }
 
 .produits>article>.prix-card>.prix-number>div>h3 {
+    font-family: "Playfair Display", serif;
     align-self: flex-end;
     font-size: 40px;
     color: #183324;
@@ -413,11 +433,12 @@ article>.rating>div>p {
 }
 
 .produits>article>.prix-card>p {
+    font-weight: 600;
     font-size: 15px;
 }
 
 article>p {
-    font-size: x-large;
+    font-size: 21px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     max-width: 37rem;
@@ -432,6 +453,7 @@ article>p {
 }
 
 .selected-capacity>p {
+    font-weight: bold;
     color: #1a3526;
 }
 
@@ -442,8 +464,12 @@ article>p {
 article>.volume-picker {
     text-align: center;
     font-size: medium;
+    font-weight: 600;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+.prix-card{
+    font-weight: 300;
 }
 
 article>.volume-picker>div {
@@ -456,7 +482,7 @@ article>.volume-picker>div {
     border-radius: 8px;
 }
 
-article>.volume-picker>#line-active {
+article>.volume-picker>#line-active{
     color: #93b09c;
     background-color: #2f493a;
 }
@@ -484,11 +510,15 @@ article>.zone-achat>.quantity-input {
 }
 
 .quantity-input>img,
-.quick-buy-btn>img {
+.quick-buy-btn>img,
+.livraison>img,
+.verre-anti-UV>img,
+.impact-solidaire>img {
     width: 30px;
 }
 
 article>.zone-achat>.purchase-button {
+    font-weight: 400;
     grid-column: 3 span;
     background-color: #2f493a;
     color: #90ad99;
@@ -507,6 +537,7 @@ article>.zone-achat>.purchase-button>img {
 .quick-buy-btn {
     display: flex;
     align-items: center;
+    font-weight: 600;
     font-size: medium;
     justify-content: center;
     gap: 1em;
@@ -515,6 +546,175 @@ article>.zone-achat>.purchase-button>img {
     border-radius: 8px;
     margin-top: 0.5em;
 }
+
+.carte-argument {
+    margin-top: 1.2rem;
+    grid-column: span 4;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.carte-argument>.livraison {
+    background-color: #f9f2e6;
+    font-weight: 600;
+    color: #26231b;
+    font-size: small;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+}
+
+.carte-argument>.livraison>div>p+p,
+.carte-argument>.verre-anti-UV>div>p+p,
+.carte-argument>.impact-solidaire>div>p+p {
+    color: #b6b2aa;
+}
+
+.carte-argument>.verre-anti-UV {
+    background-color: #f9f2e6;
+    font-weight: 600;
+    color: #26231b;
+    font-size: small;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+}
+
+.carte-argument>.impact-solidaire {
+    background-color: #f9f2e6;
+    font-weight: 600;
+    color: #26231b;
+    font-size: small;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+}
+
+.image-de-produit>.gallery-card {
+    width: inherit;
+    max-width: 100px;
+    position: relative;
+    top: 1px;
+    left: 0px;
+}
+
+.image-de-produit>.gallery-card>img {
+    object-fit: cover;
+    width: 130px;
+    height: 120px;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+
+.gallery-card>.hoverImg {
+    border: 2px #2f493a solid;
+    opacity: 0.8;
+}
+
+.passeport-terroir {
+    padding-left: 1rem;
+    margin-top: 1rem;
+    width: 34rem;
+    background-color: #e7e7e7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 12px;
+}
+
+.passeport-para {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/1;
+}
+
+.passeport-para>p {
+    align-self: center;
+    padding: 4px;
+    border-radius: 12px;
+    background-color: #a7a7a7;
+    color: #222222;
+}
+
+.bloc-critere {
+    display: grid;
+    font-size: small;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+.bloc-critere>div>p+p {
+    color: #8a8a8a;
+}
+
+.passeport-para>div {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    font-size: small;
+}
+
+.passeport-para>div>img {
+    width: 20px;
+}
+
+.meta-footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 80px;
+    overflow: hidden;
+    font-size: small;
+}
+
+.meta-footer__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.star {
+    position: absolute;
+    bottom: -30px;
+    right: -5px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.meta-footer__source,
+.meta-footer__link {
+    position: relative;
+    z-index: 2;
+}
+.guide-accordion{
+    border-radius: 8px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+    background-color: #f9f2e6;
+}
+
 
 /* Footer ----------------------------------------------  */
 
@@ -530,8 +730,6 @@ article>.zone-achat>.purchase-button>img {
     max-width: 1400px;
     margin: 0 auto;
 }
-
-
 
 .content-hero-footer {
     display: grid;
@@ -557,8 +755,6 @@ article>.zone-achat>.purchase-button>img {
 .article-foot p {
     overflow-wrap: anywhere;
 }
-
-
 
 .content-hero-footer .article-foot .hero1 {
     display: flex;
