@@ -1,0 +1,212 @@
+body {
+    background-color: #fff8ee;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-header {
+    text-align: center;
+    max-width: 850px;
+    margin: 60px auto 20px auto;
+    padding: 0 20px;
+}
+
+.badge-eco {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: #ffe6cc; 
+    color: #b35900;           
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.badge-eco img {
+    width: 14px;
+    height: 14px;
+}
+
+.badge-eco h4 {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+
+.contact-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #1a3322; 
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.contact-header p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+}
+body{
+    background-color: #fff8ee;
+}
+
+.first{
+    display: flex;
+    gap: 20px;
+}
+.h4{
+    display: flex;
+    justify-content: center;
+}
+
+.ask {
+    max-width: 60%;
+    background-color: #f9f2e5;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.sidebar-info {
+    width: 420px;
+    background-color: #fcf6ec;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.shop-icon-bg {
+    background-color: #ffe6cc;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-header h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+    color: #1a3322;
+    margin: 0 0 2px 0;
+}
+
+.location-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #b35900;
+    letter-spacing: 0.05em;
+}
+
+/* List details */
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info-icon {
+    color: #1a3322;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.info-item h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a3322;
+    margin: 0 0 6px 0;
+}
+
+.info-item p {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+}
+
+.info-item a {
+    color: #555;
+    text-decoration: underline;
+}
+
+.highlight-text {
+    font-weight: 600;
+    color: #222 !important;
+}
+
+.gold-text {
+    color: #b35900 !important;
+    font-weight: 600;
+}
+
+.external-link {
+    font-size: 11px;
+    margin-left: 2px;
+}
+
+/* Bottom Hours Box */
+.hours-box {
+    background-color: #f3eae0;
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.hours-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.hours-title h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #b35900;
+    margin: 0;
+}
+
+.hours-box p {
+    font-size: 13.5px;
+    color: #444;
+    margin: 0 0 4px 0;
+    padding-left: 26px;
+}
+
+.hours-box .sub-text {
+    font-size: 12.5px;
+    color: #777;
+    font-style: italic;
+    margin: 0;
+}
