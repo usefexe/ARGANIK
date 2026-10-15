@@ -8,9 +8,10 @@
 }
 
 body {
-    background-color:#fff8ef;;
+    background-color: #fff8ef;
+    ;
     display: flex;
-    padding-inline:1rem ;
+    padding-inline: 1rem;
     flex-direction: column;
 }
 
@@ -322,7 +323,7 @@ article>.rating {
 }
 
 article>.rating>p {
-     font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: medium;
     color: #1a3425;
     text-decoration: underline;
@@ -468,7 +469,8 @@ article>.volume-picker {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.prix-card{
+
+.prix-card {
     font-weight: 300;
 }
 
@@ -482,7 +484,7 @@ article>.volume-picker>div {
     border-radius: 8px;
 }
 
-article>.volume-picker>#line-active{
+article>.volume-picker>#line-active {
     color: #93b09c;
     background-color: #2f493a;
 }
@@ -707,14 +709,309 @@ article>.zone-achat>.purchase-button>img {
     position: relative;
     z-index: 2;
 }
-.guide-accordion{
+
+.guide-accordion {
     border-radius: 8px;
+    margin-bottom: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     background-color: #f9f2e6;
 }
 
+.guide-accordion>p,
+.feedback-grid>div>p,
+.header-titles>p {
+    margin-bottom: 0.8rem;
+    color: #815d09;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.guide-accordion>h4,
+.feedback-grid>div>h4,
+.header-titles>h4 {
+    color: #183324;
+    font-size: medium;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.accordion-content {
+    display: grid;
+    grid-template-rows: 70px 50px 1fr;
+    background-color: #e1e1e1;
+    margin-top: 2rem;
+    border-radius: 12px;
+    padding-inline: 1rem;
+}
+
+.accordion-button {
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-button>div {
+    font-weight: 600;
+    display: flex;
+    gap: 0.3rem;
+    line-height: 1;
+}
+
+.accordion-content>p {
+    padding-left: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 62rem;
+    color: #616161;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cards-grid>div {
+    padding: 1.2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.cards-grid>div>h5 {
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #e1e1e1;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background-color: #e1e1e1;
+    padding: 1rem;
+    padding-left: 2rem;
+    border-radius: 12px;
+}
+
+.accordion-header>div {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.feedback-grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#depose-comment {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #ede6db;
+    padding: 0.3rem;
+    border-radius: 12px;
+}
+
+#depose-comment>i {
+    padding-left: 0.3rem;
+}
+
+#depose-comment>p {
+    margin-bottom: 0;
+    padding-inline: 0.4rem;
+    color: #2a4234;
+    align-self: center;
+    font-size: small;
+    font-weight: 600;
+}
+
+.reviews-grid {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+.review-card {
+    background-color: #f9f2e6;
+    display: grid;
+    grid-template-rows: 40px 50px 120px;
+    padding-inline: 2rem;
+    border-radius: 12px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.review-card>#five-star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-card>#five-star>div {
+    color: #7c5700;
+}
+
+.review-card>h4 {
+    font-size: x-large;
+    font-family: "Playfair Display", serif;
+}
+
+.review-card>p {
+    width: 23rem;
+}
+
+.review-card-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6efe3;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.profil-reviews {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+#achat {
+    align-self: center;
+    background-color: #cae9d4;
+    color: #405c4a;
+    font-size: x-small;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 24px;
+    padding: 0.4rem;
+}
+
+.profil-reviews>span {
+    padding: 1rem;
+    background-color: #ffdda7;
+    color: #33230a;
+    border-radius: 50%;
+}
+
+.profil-reviews>div>h5 {
+    font-size: medium;
+}
+
+.profil-reviews>div>p {
+    font-size: x-small;
+}
+
+.related-products-header {
+
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.catalog-link {
+    align-items: center;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.related-products-section {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    margin-bottom: 5rem;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-grid {
+    position: inherit;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-grid>span {
+    position: absolute;
+    left: 23px;
+    top: 167rem;
+    font-size: x-small;
+    font-weight: 600;
+    padding: 0.2rem;
+    border-radius: 12px;
+    background-color: #a7b6cf;
+    color: #384760;
+}
+
+.product-grid>img {
+    object-fit: cover;
+    width: 300px;
+    height: 240px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.product-info {
+    background-color: #e7e7e7;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    width: 300px;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.product-info>p {
+    font-size: 15px;
+    font-weight: 300;
+    align-self: center;
+}
+
+.product-info>h3 {
+    padding: 0.2rem;
+    font-family: "Playfair Display", serif;
+}
+
+.product-info>.prix-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px 12px 12px  12px;
+}
+
+.product-info>.prix-info>span {
+    align-self: center;
+    background-color: #3a3a3a;
+    color: #a2a2a2;
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+
+.product-info>.prix-info>p {
+    font-weight: 800;
+    font-size: medium;
+
+}
 
 /* Footer ----------------------------------------------  */
 
