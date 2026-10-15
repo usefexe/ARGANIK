@@ -917,3 +917,114 @@
         margin-top: 33px;
     }
 }
+
+/* derniere Section */
+
+.tracabilite-bas {
+    width: 100%;
+    padding: 100px 40px;
+    background-color: #fff8ef;
+    color: #585c56;
+}
+
+.section-tracabilite-bas-heros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-tracabilite-bas-heros >p:first-child {
+    font-size: 0.7em;
+    color: #5e4402;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-tracabilite-bas-heros > p:last-child {
+    font-size: 2em;
+    color: #0e291c;
+}
+
+.section-tracabilite-bas-foot {
+    display: flex;
+    gap: 3%;
+    margin-top: 50px;
+}
+
+.article-bas-foot {
+    min-width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f2e6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.article-bas-foot img {
+    width: 42px;
+    background-color: #cae9d4;
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.article-bas-foot .card-bas-foot-hero {
+    color: #1d3728;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+.article-bas-foot .card-bas-foot-about {
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.article-bas-foot .card-bas-foot-foot {
+    color: #896819;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.87em;
+}
+
+@media (max-width:1025px) {
+    .section-tracabilite-bas-foot{
+        flex-wrap: wrap;
+        row-gap: 27px;
+    }
+    .article-bas-foot {
+        flex: 1;
+    }
+    .article-bas-foot:last-child {
+        max-width: 31.3%;
+    }
+}
+@media (max-width:796px) {
+        .article-bas-foot {
+            font-size: 0.62em;
+        }
+
+}
+@media (max-width:650px) {
+    .article-bas-foot {
+        min-width: 48%;
+    }
+}
+@media (max-width:426px) {
+    .section-tracabilite-bas-heros {
+        font-size: 0.75em;
+    }
+}
+@media (max-width:391px) {
+    .article-bas-foot {
+        min-width: 100%;
+    }
+}
+
+@media (max-width:362px) {
+    .section-tracabilite-bas-heros {
+        font-size: 0.56em
+    }
+}
