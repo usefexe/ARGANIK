@@ -7,13 +7,13 @@
     /* ne difinit pas un background-color ici car je me trouve un probleme de color dans le Footer  */
 }
 
-body {
+/* body {
     background-color: #fff8ef;
     ;
     display: flex;
     padding-inline: 1rem;
     flex-direction: column;
-}
+} */
 
 .pub {
     background-color: #183324;
@@ -271,7 +271,7 @@ main {
     background-color: white;
 }
 
-article>div {
+.article-div {
     font-size: small;
     font-family: "Plus Jakarta Sans", sans-serif;
     display: flex;
