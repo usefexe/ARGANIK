@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: 500px;
 
 
@@ -273,6 +273,7 @@ h1 {
             gap: 3px;
             font-weight: 700;
             font-size: 13px;
+            max-width: 230px;
 
             span {
                 font-weight: 700;
@@ -484,6 +485,7 @@ h1 {
 
     .leftside {
         position: relative;
+      
 
         .care {
             background-color: #ECE2CF;
@@ -693,6 +695,7 @@ h1 {
     margin-top: 40Px;
     margin-left: 40Px;
     margin-right: 70Px;
+    padding-right: 20px;
     background-color: #F4EDE1;
     padding-left: 20px;
     border-radius: 10px;
@@ -719,7 +722,7 @@ h1 {
     }
 
     ul {
-        line-height: 5px;
+        line-height: 15px;
         margin-top: 30px;
 
         span {
@@ -868,4 +871,820 @@ h1 {
         }
     }
 
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   body{
+    max-width:760px;
+   }
+   .herocards{
+    margin-left: 100Px;
+   }
+   .produits{
+    h3{
+        margin-left: 200px;
+    }
+    h1{
+        font-size: xx-large;
+        margin-left: 150px;
+    }
+      .xx {
+        margin-left: 0;
+        display: flex;
+        gap: 0px;
+        align-items: center;
+    }
+   
+   }
+   .produitcards {
+    margin-left: 40Px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+        .t-card{
+            margin-left: 150Px;
+        }
+.qrcode{
+   display: none;
+   
+}
+.a-card{
+    margin-left: 150PX;
+}
+.impact {
+    padding-bottom: 40px;
+    background-color: #F9F2E6;
+    margin-top: 100px;
+    width: 100%;
+    height: 1000px;
+    
+    display: flex;
+   flex-direction:column ;
+
+    .rightside {
+        margin-top: 40px;
+        margin-left: 20px;
+        
+
+
+        h1 {
+            margin-right: 80px;
+            margin-top: 32px;
+            font-family: "Playfair Display", serif;
+            font-size: 30Px;
+            font-weight: 700;
+            color: black;
+            font-style: normal;
+        }
+
+     
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: small;
+            font-weight: 700;
+            margin-right: 50px;
+            margin-bottom: 20px;
+
+
+        }
+    }
+
+
+    .leftside {
+      
+
+        .care {
+ display: none;
+
+        }
+
+        >img {
+            position: absolute;
+            margin-left :60PX;
+            margin-top: 30px;
+            z-index: 2;
+            border-radius: 10px;
+            height: 300px;
+            width: 500px;
+            object-fit: cover;
+            position: static;
+            /* left: 90px;
+            bottom: 100PX; */
+        }
+
+        .msg {
+            position: absolute;
+            z-index: 2;
+            height: 130px;
+            left: 260px;
+            top:170px;
+            background-color: #f3f1ec;
+            width: 350px;
+            border-radius: 10px;
+
+            img {
+                width: 27px;
+                height: 27px;
+            }
+
+            li {
+                margin-left: 30px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 5px;
+                    background-color: #7B7E6E;
+                    border-radius: 30px;
+                    padding: 5px;
+                }
+
+                span {
+                    font-family: "Plus Jakarta Sans", sans-serif;
+                    font-size: small;
+                    font-weight: 700;
+                }
+
+                p {
+                    margin-left: 15px;
+                    font-family: "Plus Jakarta Sans", sans-serif;
+                    font-size: medium;
+                    font-weight: 700;
+                }
+
+
+            }
+
+            article {
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: small;
+                font-weight: 500;
+                width: 80%;
+                margin-left: 30px;
+                color: #383736;
+            }
+        }
+    }
+}
+.avis {
+    .aviscards {
+        margin: 50Px 50px 0PX 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}}   
+
+
+@media screen and (max-width: 767px) {
+    
+   
+    body {
+        padding: 10px;
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #FFF8EF;
+    }
+
+    /* HERO */
+    .hero {
+        height: auto;
+        min-height: 0;
+        padding: 35px 15px 30px;
+        background-image: none;
+        background-color: #183324;
+        border-radius: 8px;
+    }
+
+    .hbdg {
+        width: fit-content;
+        max-width: 95%;
+        box-sizing: border-box;
+        height: auto;
+        min-height: 22px;
+        padding: 6px 9px;
+        margin-bottom: 18px;
+        gap: 5px;
+        font-size: 8px;
+    }
+
+    .hbdg img {
+        width: 12px;
+        flex-shrink: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(25px, 7vw, 34px);
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .desc {
+        margin-top: 18px;
+        margin-bottom: 22px;
+        line-height: normal;
+    }
+
+    .desc p {
+        font-size: 11px;
+        line-height: 1.7;
+        margin: 0;
+        color: #deded5;
+    }
+
+    .but {
+        flex-direction: column;
+        gap: 8px;
+        margin: 0;
+    }
+
+    .but button {
+        width: 100%;
+        height: 40px;
+        font-size: 11px;
+        border-radius: 7px;
+    }
+
+    .but button img {
+        width: 15px;
+    }
+
+    .but .bone {
+        background-color: #C8962E;
+        color: white;
+    }
+
+    .but .btwo {
+        background-color: #344D3D;
+        color: white;
+    }
+
+    .padge {
+        display: none;
+    }
+
+    /* STATISTICS CARDS */
+    .herocards {
+        position: static;
+        margin: 15px 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .hcard {
+        width: auto;
+        height: 145px;
+        min-width: 0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .hcard img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+        padding: 5px;
+        margin: 12px 0 0 12px;
+        background-color: #F9F2E6;
+    }
+
+    .hcard h3 {
+        font-size: 21px;
+        margin: 7px 0 0 12px;
+    }
+
+    .hcard h4 {
+        font-size: 11px;
+        margin: 3px 8px 0 12px;
+    }
+
+    .hcard p {
+        font-size: 9px;
+        line-height: 1.5;
+        margin: 5px 8px 8px 12px;
+    }
+
+    /* PRODUCTS */
+    .produits {
+        margin: 45px 0 0;
+    }
+
+    .produits h3 {
+        font-size: 9px;
+        line-height: 1.6;
+    }
+
+    .produits h3 img {
+        width: 13px;
+        flex-shrink: 0;
+    }
+
+    .produits h1 {
+        font-size: 27px;
+        line-height: 1.2;
+        margin: 12px 0;
+    }
+
+    .produits .xx {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 0;
+    }
+
+    .produits .xx p {
+        width: 100%;
+        font-size: 11px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .produits .xx button {
+        width: 100%;
+        height: 36px;
+        font-size: 10px;
+    }
+
+    .produitcards {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 12px;
+        margin: 18px 0 0;
+        padding-bottom: 10px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+    }
+
+    .prdcard {
+        flex: 0 0 78%;
+        width: 78%;
+        min-width: 0;
+        scroll-snap-align: start;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .prdcard .top {
+        width: 100%;
+        height: 180px;
+    }
+
+    .prdcard .top .imgT {
+        width: 85%;
+        height: 145px;
+        object-fit: cover;
+    }
+
+    .prdcard .badge {
+        width: 90%;
+        gap: 8px;
+        justify-content: space-between;
+        left: 5px;
+    }
+
+    .prdcard .badge p {
+        width: auto;
+        margin: 0;
+        gap: 4px;
+    }
+
+    .prdcard .badge p span {
+        width: auto;
+        min-height: 17px;
+        height: auto;
+        padding: 3px 6px;
+        box-sizing: border-box;
+        font-size: 8px;
+    }
+
+    .prdcard .badge img {
+        width: 15px;
+        height: 15px;
+        margin-top: 8px;
+    }
+
+    .prdcard .buttum {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px 8px 0;
+    }
+
+    .prdcard .buttum p {
+        margin: 0 0 8px;
+        font-size: 9px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .prdcard .buttum .img {
+        width: 12px;
+    }
+
+    .prdcard .buttum h3 {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 8px 0;
+    }
+
+    .prdcard .buttum article {
+        font-size: 10px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .prdcard .panier {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .prdcard .panier p {
+        font-size: 8px;
+        line-height: 1.5;
+        margin: 10px;
+    }
+
+    .prdcard .panier button {
+        margin: 8px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .prdcard .panier button img {
+        width: 15px;
+    }
+
+    /* SOCIAL IMPACT */
+    .impact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        margin-top: 35px;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .impact .leftside {
+        position: relative;
+        width: 100%;
+        min-height: 230px;
+    }
+
+    .impact .leftside .care {
+        display: none;
+    }
+
+    .impact .leftside > img {
+        position: static;
+        display: block;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 9px;
+    }
+
+    .impact .leftside .msg {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 90%;
+        height: auto;
+        min-height: 95px;
+        box-sizing: border-box;
+        margin: -45px auto 0;
+        padding: 10px;
+        border-radius: 9px;
+    }
+
+    .impact .leftside .msg li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .impact .leftside .msg li img {
+        width: 20px;
+        height: 20px;
+        padding: 4px;
+        flex-shrink: 0;
+    }
+
+    .impact .leftside .msg li p {
+        font-size: 10px;
+        margin: 0 0 0 8px;
+        line-height: 1.5;
+    }
+
+    .impact .leftside .msg li p span {
+        font-size: 8px;
+    }
+
+    .impact .leftside .msg article {
+        width: 100%;
+        margin: 8px 0 0;
+        font-size: 9px;
+        line-height: 1.6;
+    }
+
+    .impact .rightside {
+        margin: 0;
+    }
+
+    .impact .rightside > span {
+        width: fit-content;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 5px 8px;
+        font-size: 8px;
+    }
+
+    .impact .rightside > span img {
+        width: 13px;
+    }
+
+    .impact .rightside h1 {
+        font-size: 27px;
+        line-height: 1.3;
+        margin: 18px 0;
+    }
+
+    .impact .rightside p {
+        font-size: 11px;
+        line-height: 1.8;
+        margin: 12px 0;
+    }
+
+    .impact .rightside li {
+        align-items: flex-start;
+        margin: 15px 0;
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .impact .rightside li img {
+        width: 15px;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .impact .rightside button {
+        margin-top: 15px;
+        font-size: 10px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .impact .rightside button img {
+        width: 14px;
+        flex-shrink: 0;
+    }
+
+    /* TRANSPARENCY */
+    .transparance {
+        margin-top: 40px;
+    }
+
+    .transparance h5 {
+        font-size: 9px;
+        letter-spacing: 1px;
+        line-height: 1.6;
+    }
+
+    .transparance h1 {
+        width: 100%;
+        font-size: 25px;
+        line-height: 1.3;
+        margin: 10px 0 15px;
+    }
+
+    .transparance center span {
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    .transparance center span br {
+        display: none;
+    }
+
+    .transparance .trcards {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: 25px 0 0;
+    }
+
+    .transparance .trcards .t-card {
+        width: 100%;
+        height: auto;
+        min-height: 285px;
+        box-sizing: border-box;
+        padding-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    .transparance .t-card > ul {
+        margin: 0;
+        padding: 15px 20px 0;
+        justify-content: space-between;
+    }
+
+    .transparance .t-card > ul > span {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .transparance .t-card > ul > img {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 8px;
+    }
+
+    .transparance .t-card > h5 {
+        height: auto;
+        margin: 20px 20px 10px;
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .transparance .t-card > p {
+        height: auto;
+        margin: 10px 20px 18px;
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .transparance .t-card > ol {
+        margin: 15px 20px 0;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .transparance .t-card > ol img {
+        width: 15px;
+        flex-shrink: 0;
+    }
+
+    .transparance .t-card > ol span {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    /* QR / TRACEABILITY */
+    .qrcode {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 25px 0 0;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .qrcode .qrb {
+        width: 35px;
+        height: 35px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .qrcode i {
+        font-size: 22px;
+    }
+
+    .qrcode ul {
+        flex: 1;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    .qrcode ul span {
+        font-size: 11px;
+    }
+
+    .qrcode ul p {
+        font-size: 9px;
+        line-height: 1.7;
+        margin: 5px 0;
+    }
+
+    .qrcode .btnicn {
+        width: 100%;
+        height: 35px;
+        justify-content: center;
+        margin: 0;
+        font-size: 9px;
+    }
+
+    /* CUSTOMER REVIEWS */
+    .avis {
+        margin-top: 30px;
+        padding: 25px 12px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .avis h5 {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .avis h1 {
+        width: 100%;
+        font-size: 25px;
+        line-height: 1.3;
+        margin: 10px 0;
+    }
+
+    .avis center span {
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    .avis center span br {
+        display: none;
+    }
+
+    .avis .aviscards {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 25px 0 0;
+    }
+
+    .avis .aviscards .a-card {
+        width: 100%;
+        height: auto;
+        min-height: 245px;
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .avis .a-card ul {
+        display: flex;
+        gap: 3px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .avis .a-card ul img {
+        width: 15px;
+    }
+
+    .avis .a-card p {
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+        box-sizing: border-box;
+        margin: 15px 0;
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .avis .a-card ol {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .avis .a-card .profile {
+        flex-shrink: 0;
+        padding: 11px;
+        font-size: 12px;
+    }
+
+    .avis .a-card .name {
+        display: inline-block;
+        margin: 0;
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .avis .a-card .local {
+        display: inline-block;
+        margin: 0;
+        font-size: 9px;
+        line-height: 1.7;
+    }
 }
