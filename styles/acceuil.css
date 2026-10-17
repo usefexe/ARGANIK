@@ -16,7 +16,7 @@ body {
             rgba(20, 48, 34, 0.96) 0%,
             rgba(47, 74, 58, 0.85) 35%,
             rgba(25, 40, 30, 0.50) 70%,
-            rgba(0, 0, 0, 0.65) 100%), url("/imgs/hero/accueil-hero-cooperatrices.jpg");
+            rgba(0, 0, 0, 0.65) 100%), url("../imgs/hero/accueil-hero-cooperatrices.jpg");
 
     background-repeat: no-repeat;
     background-size: cover;
