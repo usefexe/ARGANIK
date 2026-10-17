@@ -1,19 +1,14 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Playfair Display", serif;
     font-family: "Plus Jakarta Sans", sans-serif;
-    /* ne difinit pas un background-color ici car je me trouve un probleme de color dans le Footer  */
 }
 
-/* body {
-    background-color: #fff8ef;
-    ;
-    display: flex;
-    padding-inline: 1rem;
-    flex-direction: column;
-} */
+/* =========================
+   PUBLICITÉ
+========================= */
 
 .pub {
     background-color: #183324;
@@ -22,55 +17,72 @@
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 600;
     font-size: small;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding: 0.5em;
+}
 
-    @media (max-width:852px) {
+@media (max-width: 852px) {
+    .pub {
         font-size: x-small;
     }
 }
 
+/* =========================
+   NAVIGATION PRINCIPALE
+========================= */
+
 .Navigation {
     position: sticky;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 500;
     top: 0;
+    z-index: 1000;
+
     background-color: #fef7ef;
     display: flex;
     padding: 2em;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 10px 20px -5px rgb(202, 191, 191);
 
-    @media (max-width:845px) {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+
+    box-shadow: 0 10px 20px -5px rgb(202, 191, 191);
+}
+
+@media (max-width: 845px) {
+    .Navigation {
         padding: 1rem;
     }
 }
 
+/* =========================
+   LOGO
+========================= */
+
 .logo {
     align-self: center;
-
 }
 
-.logo>a>img {
+.logo > a > img {
+    display: block;
     width: 170px;
+}
 
-    @media (max-width:852px) {
+@media (max-width: 852px) {
+    .logo > a > img {
         width: 100px;
     }
 }
 
+/* =========================
+   MENU DESKTOP
+========================= */
+
 .menu {
     background-color: #f9f2e6;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 3rem;
     display: flex;
-    list-style-type: none;
+    list-style: none;
     gap: 2rem;
     border-radius: 10rem;
-
-    @media (max-width:632px) {
-        display: none;
-    }
 }
 
 .menu li {
@@ -78,81 +90,138 @@
     display: flex;
     align-items: center;
     font-size: large;
+}
 
-    @media (max-width:852px) {
-        font-size: small;
-    }
+.menu li a {
+    text-decoration: none;
+    color: black;
 }
 
 .menu .lien-actif {
     background-color: #2f493a;
     color: #c4c5bb;
-    padding: 5px;
-    padding-inline: 12px;
+    padding: 5px 12px;
     border-radius: 4px;
 }
 
-.profile {
-    border: 1px #ceead6 solid;
-    width: 50px;
-    border-radius: 50px;
-
-    @media (max-width:852px) {
-        width: 40px;
+@media (max-width: 852px) {
+    .menu li {
+        font-size: small;
     }
 }
 
-nav div {
-    display: flex;
-    gap: 2rem;
-
-    @media (max-width:852px) {
-        gap: 1rem;
-    }
-}
-
-div>img {
-    width: 40px;
-
-    @media (max-width:852px) {
-        width: 20px;
-    }
-}
-
-.menuPhone {
-    list-style: none;
-    text-align: start;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    display: none;
-    background-color: #fef7ef;
-    position: fixed;
-    right: 20px;
-    top: 90px;
-}
-
-.menuPhone>li {
-    padding: 4px;
-}
-
-.menuPhone.active {
-    display: block;
-}
-
-.nav-actions {
-    @media (max-width:632px) {
+@media (max-width: 632px) {
+    .menu {
         display: none;
     }
 }
 
+/* =========================
+   MENU MOBILE
+========================= */
+
+.menuPhone {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+    list-style: none;
+    text-align: start;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    background-color: #fef7ef;
+    padding: 1rem;
+
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+    z-index: 1001;
+}
+
+.menuPhone li {
+    padding: 4px;
+}
+
+.menuPhone a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.menuPhone a.lien-actif {
+    background-color: #2f493a;
+    color: #c4c5bb;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+.menuPhone.active {
+    display: flex;
+}
+
+/* Le menu mobile apparaît uniquement sur téléphone */
+
+@media (min-width: 633px) {
+    .menuPhone {
+        display: none !important;
+    }
+}
+
+/* =========================
+   BOUTON MENU BURGER
+========================= */
+
 .btn-menu {
     display: none;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
 
-    @media (max-width:632px) {
+@media (max-width: 632px) {
+    .btn-menu {
         display: block;
-        width: 30px;
-        cursor: pointer;
+    }
+}
+
+/* =========================
+   ACTIONS : PANIER ET PROFIL
+========================= */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-actions .painer {
+    width: 40px;
+}
+
+.profile {
+    border: 1px solid #ceead6;
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media (max-width: 852px) {
+    .nav-actions {
+        gap: 1rem;
     }
 
+    .profile {
+        width: 40px;
+    }
+}
+
+@media (max-width: 632px) {
+    .nav-actions {
+        display: none;
+    }
 }
 
 
