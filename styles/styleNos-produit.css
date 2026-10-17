@@ -474,6 +474,8 @@ main a {
 }
 
 .btn-decouvrir {
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: black;
     color: white;
@@ -1245,4 +1247,10 @@ main a {
     }
 }
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
+button >a{
+    color: white;
+}

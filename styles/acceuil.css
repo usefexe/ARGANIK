@@ -1,5 +1,7 @@
 body {
-    padding-top: 0px;
+  padding: 0;
+  margin: 0;
+
     /* padding: 20px; */
 
     background-color: #FFF8EF;
@@ -1705,12 +1707,15 @@ h1 {
 }
 
 .site-header .pub {
+    width: 100%;
+    margin: 0;
+    padding: 8px 0;
+    box-sizing: border-box;
     background-color: #183324;
     color: #eee8dc;
     text-align: center;
     font-weight: 600;
     font-size: small;
-    padding-block: 0.5em;
 }
 
 .site-header .Navigation {
@@ -1718,7 +1723,7 @@ h1 {
     top: 0;
     background-color: #fef7ef;
     display: flex;
-    padding: 2em;
+    padding:  1em 2em;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 10px 20px -5px rgb(202, 191, 191);
@@ -1751,6 +1756,12 @@ h1 {
 }
 
 .site-header .menu .lien-actif {
+    background-color: #2f493a;
+    color: #c4c5bb;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+.menu .lien-actif {
     background-color: #2f493a;
     color: #c4c5bb;
     padding: 5px 12px;
@@ -2157,4 +2168,9 @@ h1 {
     .site-footer .icon-pied {
         gap: 10px;
     }
+}
+a{
+text-decoration: none;
+color: black;
+
 }
